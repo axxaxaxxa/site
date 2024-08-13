@@ -38,9 +38,9 @@
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Расположение по вертикали */
-    align-items: center; /* Выравнивание по центру */
-    justify-content: center; /* Выравнивание по центру */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -50,7 +50,7 @@
     border: none;
     border-radius: 30px;
     padding: 15px 30px;
-    margin: 10px 0; /* Отступы между кнопками */
+    margin: 10px 0;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -59,4 +59,35 @@
 
 .button:hover, .random-color-button:hover {
     background-color: #ff4f4f;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .bio-details {
+        margin-left: 0;
+    }
+
+    .bio-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bio-details h2 {
+        font-size: 20px;
+    }
+
+    .bio-details p {
+        font-size: 14px;
+    }
+
+    .button, .random-color-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
